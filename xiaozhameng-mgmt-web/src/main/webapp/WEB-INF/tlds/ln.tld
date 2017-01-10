@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+	<description>JSTL 1.1 functions library</description>
+	<display-name>JSTL functions loan</display-name>
+	<tlib-version>1.1</tlib-version>
+	<short-name>loan</short-name>
+	<uri>http://java.sun.com/jsp/jstl/functionsc</uri>
+	<!-- 获取产品列表查询状态  -->
+	<function>
+		<description>产品列表状态查询列表  </description>
+		<name>loanStatusForSearch</name>
+		<function-class>com.xiaozhameng.mgmt.modules.web.model.LoanStatusEnum</function-class>
+		<function-signature>java.util.Array loanStatusForSearch()</function-signature>
+	</function>
+	<!-- 获取产品类别  -->
+	<function>
+		<description>获取产品类别  </description>
+		<name>getLoanTypes</name>
+		<function-class>com.xiaozhameng.mgmt.modules.web.model.LoanTypeEnum</function-class>
+		<function-signature>java.util.Array values()</function-signature>
+	</function>
+	<!-- 获取产品销售类别  -->
+	<function>
+		<description>获取产品销售类别  </description>
+		<name>getLoanSellTypes</name>
+		<function-class>com.xiaozhameng.mgmt.modules.web.model.LoanSellTypeEnum</function-class>
+		<function-signature>java.util.Array values()</function-signature>
+	</function>
+	
+		<!-- 获取所有奖品组信息  -->
+	<function>
+		<description>获取所有奖品组信息</description>
+		<name>getAllPrizegroups</name>
+		<function-class>com.xiaozhameng.mgmt.modules.web.CouponController</function-class>
+		<function-signature>java.util.List getAllPrizeGroups()</function-signature>
+	</function>
+	
+	<!-- 获取奖品类型  -->
+	<function>
+		<description>获取奖品类型  </description>
+		<name>getCouponTypes</name>
+		<function-class>com.xiaozhameng.enums.CouponTypeEnum</function-class>
+		<function-signature>java.util.Array values()</function-signature>
+	</function>
+	   	<!-- 获取商户列表 -->
+	<function>
+		<description>获取商户列表  </description>
+		<name>getMerchantKeys</name>
+		<function-class>com.xiaozhameng.mgmt.modules.web.model.MerchantKeyEnum</function-class>
+		<function-signature>java.util.Array values()</function-signature>
+	</function>
+</taglib>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="com.thinkgem.jeesite.act">
+<process id="create_loan" isExecutable="true">
+<startEvent id="sid-AF4FA5D6-84CD-4DDD-A1B3-459460F953F0" name="标的录入" activiti:initiator="thinkgem" activiti:formKey="/oa/testAudit/form"/>
+<userTask id="sid-5F376D8F-94ED-49F5-A293-573545124736" name="标的审核" activiti:assignee="thinkgem"/>
+<sequenceFlow id="sid-C515CFC1-07B0-4054-A686-92CEF4577477" sourceRef="sid-AF4FA5D6-84CD-4DDD-A1B3-459460F953F0" targetRef="sid-5F376D8F-94ED-49F5-A293-573545124736"/>
+<endEvent id="sid-E4DA62E0-56ED-4230-AB7A-2BF2425EF644" name="标的录入审批完成"/>
+<sequenceFlow id="sid-B448C55F-4541-4E31-81CC-F8F31DA07FC5" sourceRef="sid-5F376D8F-94ED-49F5-A293-573545124736" targetRef="sid-E4DA62E0-56ED-4230-AB7A-2BF2425EF644"/>
+</process>
+<bpmndi:BPMNDiagram id="BPMNDiagram_process">
+<bpmndi:BPMNPlane bpmnElement="process" id="BPMNPlane_process">
+<bpmndi:BPMNShape bpmnElement="sid-AF4FA5D6-84CD-4DDD-A1B3-459460F953F0" id="BPMNShape_sid-AF4FA5D6-84CD-4DDD-A1B3-459460F953F0">
+<omgdc:Bounds height="30.0" width="30.0" x="80.0" y="47.0"/>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape bpmnElement="sid-5F376D8F-94ED-49F5-A293-573545124736" id="BPMNShape_sid-5F376D8F-94ED-49F5-A293-573545124736">
+<omgdc:Bounds height="80.0" width="100.0" x="255.0" y="45.0"/>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape bpmnElement="sid-E4DA62E0-56ED-4230-AB7A-2BF2425EF644" id="BPMNShape_sid-E4DA62E0-56ED-4230-AB7A-2BF2425EF644">
+<omgdc:Bounds height="28.0" width="28.0" x="480.0" y="71.0"/>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNEdge bpmnElement="sid-C515CFC1-07B0-4054-A686-92CEF4577477" id="BPMNEdge_sid-C515CFC1-07B0-4054-A686-92CEF4577477">
+<omgdi:waypoint x="95.0" y="77.0"/>
+<omgdi:waypoint x="95.0" y="85.0"/>
+<omgdi:waypoint x="255.0" y="85.0"/>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge bpmnElement="sid-B448C55F-4541-4E31-81CC-F8F31DA07FC5" id="BPMNEdge_sid-B448C55F-4541-4E31-81CC-F8F31DA07FC5">
+<omgdi:waypoint x="355.0" y="85.0"/>
+<omgdi:waypoint x="480.0" y="85.0"/>
+</bpmndi:BPMNEdge>
+</bpmndi:BPMNPlane>
+</bpmndi:BPMNDiagram>
+</definitions>
