@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>MaiMangXiaoZhaMeng</title>
 
     <!-- Bootstrap -->
     <link href="/static/boostrap/bootstrap-3.3.0-dist/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -19,7 +19,6 @@
 <body>
     <%--导航栏--%>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-
         <div class="container-fluid">
             <%--网站Logo--%>
             <div class="navbar-header">
@@ -90,7 +89,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Controls -->
         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -102,6 +100,70 @@
         </a>
     </div>
 
+    <%--网格布局系统--%>
+    <div class="container">
+        <div class="hd04">
+            <a href="http://www.whxmt.com/c/news/" title="查看更多 最新活动" style="border-width: 5px;">
+               <h2 class="text-center"> 最新活动-ACTIVITYS</h2>
+            </a>
+            <p class="text-center">
+                xiaozhameng 是一自强不息的少年，他凭借自身不卑不亢的品质和吃苦耐劳的精神，在帝都的雾霾中拼命生长···
+            </p>
+            <p class="text-center">
+                They say a person needs just three things to be truly happy in this world:someone to love,something to do,and something to hope for.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="static/images/sample/14342750190.jpg" class="img-responsive">
+                <label>
+                    郭大哥不喜欢这个网站
+                </label>
+            </div>
+            <div class="col-md-6">
+                <img src="static/images/sample/14352258400.jpg" class="img-responsive">
+                <label>
+                    小张颖可能喜欢
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">关心问题一</div>
+            <div class="col-md-4">关心问题二</div>
+            <div class="col-md-4">关心问题三</div>
+        </div>
+        <div class="row">
+            <p>案例CASE</p>
+            <div>
+                案例说明-----------------------
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="row">
+                    <img src="static/images/caseImage/14686371240.jpg" class="img-responsive img-thumbnail">
+                </div>
+                <div class="row">
+                    <p>这是一张图片</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <img src="static/images/caseImage/14686376120.jpg" class="img-responsive img-thumbnail">
+                </div>
+                <div class="row">
+                    <p>这是一张图片</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <img src="static/images/caseImage/14686469770.jpg" class="img-responsive img-thumbnail">
+                </div>
+                <div class="row">
+                    <p>这是一张图片</p>
+                </div>
+            </div>
+    </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
