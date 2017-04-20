@@ -116,15 +116,15 @@
         <div class="row">
             <div class="col-md-6">
                 <img src="static/images/sample/14342750190.jpg" class="img-responsive">
-                <label>
+                <p class="text-left">
                     郭大哥不喜欢这个网站
-                </label>
+                </p>
             </div>
             <div class="col-md-6">
                 <img src="static/images/sample/14352258400.jpg" class="img-responsive">
-                <label>
+                <p class="text-left">
                     小张颖可能喜欢
-                </label>
+                </p>
             </div>
         </div>
         <div class="row">
@@ -133,35 +133,21 @@
             <div class="col-md-4">关心问题三</div>
         </div>
         <div class="row">
-            <p>案例CASE</p>
-            <div>
-                案例说明-----------------------
-            </div>
+            <p class="text-center">案例CASE</p>
+            <p class="text-center">案例说明-----------------------</p>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <div class="row">
-                    <img src="static/images/caseImage/14686371240.jpg" class="img-responsive img-thumbnail">
-                </div>
-                <div class="row">
-                    <p>这是一张图片</p>
-                </div>
+                <img src="static/images/caseImage/14686371240.jpg" class="img-responsive">
+                <p>这是一张图片</p>
             </div>
             <div class="col-md-4">
-                <div class="row">
-                    <img src="static/images/caseImage/14686376120.jpg" class="img-responsive img-thumbnail">
-                </div>
-                <div class="row">
-                    <p>这是一张图片</p>
-                </div>
+                <img src="static/images/caseImage/14686376120.jpg" class="img-responsive">
+                <p>这是一张图片</p>
             </div>
             <div class="col-md-4">
-                <div class="row">
-                    <img src="static/images/caseImage/14686469770.jpg" class="img-responsive img-thumbnail">
-                </div>
-                <div class="row">
-                    <p>这是一张图片</p>
-                </div>
+                <img src="static/images/caseImage/14686469770.jpg" class="img-responsive">
+                <p>这是一张图片</p>
             </div>
     </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

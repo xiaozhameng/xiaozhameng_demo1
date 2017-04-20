@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- release v4.4.0, copyright 2014 - 2017 Kartik Visweswaran -->
+<!--suppress JSUnresolvedLibraryURL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Krajee JQuery Plugins - &copy; Kartik</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/boostrap/bootstrap-fileinput-db72623/css/fileinput.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="/static/boostrap/bootstrap-fileinput-db72623/themes/explorer/theme.css" media="all" rel="stylesheet" type="text/css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="/static/boostrap/bootstrap-fileinput-db72623/js/plugins/sortable.js" type="text/javascript"></script>
+    <script src="/static/boostrap/bootstrap-fileinput-db72623/js/fileinput.js" type="text/javascript"></script>
+    <script src="/static/boostrap/bootstrap-fileinput-db72623/js/locales/fr.js" type="text/javascript"></script>
+    <script src="/static/boostrap/bootstrap-fileinput-db72623/js/locales/es.js" type="text/javascript"></script>
+    <script src="/static/boostrap/bootstrap-fileinput-db72623/themes/explorer/theme.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="container kv-main">
+    <div class="page-header">
+        <h1>Bootstrap File Input Example
+            <small><a href="https://github.com/kartik-v/bootstrap-fileinput-samples"><i
+                    class="glyphicon glyphicon-download"></i> Download Sample Files</a></small>
+        </h1>
+    </div>
+
+    <!--上传控件-->
+    ******************** 展示方式A *********************
+    <form enctype="multipart/form-data" method="POST">
+        <div class="form-group">
+            <input id="file-1" type="file" multiple class="file" name="userfile" data-overwrite-initial="false" data-min-file-count="2">
+        </div>
+    </form>
+    ******************** 展示方式B *********************
+    <form enctype="multipart/form-data">
+        <input id="file-0a" class="file" type="file" multiple data-min-file-count="1">
+    </form>
+
+    <div>
+        <br/>
+        initialPreview：类型string或array。显示的初始化预览内容。你可以传入一个简单的HTML标签用于显示图片、文本或文件。
+        如果设置一个字符串，会在初始化预览图中显示一个文件。你可以在initialDelimiter属性中设置分隔符用于显示多个预览图。
+        如果设置为数组，初始化预览图中会显示数组中所有的文件。
+    </div>
+
+</div>
+</body>
+
+
+
+<script>
+    $("#file-1").fileinput({
+        uploadUrl: 'fileupload', // you must set a valid URL here else you will get an error
+        allowedFileExtensions : ['jpg','png'],
+        overwriteInitial: false,
+        maxFileSize: 6000,
+        maxFilesNum: 10,
+        //allowedFileTypes: ['image', 'video', 'flash'],
+        slugCallback: function(filename) {
+             return filename.replace('(', '_').replace(']', '_');
+         }
+     });
+    $("#file-0a").fileinput({
+//        uploadUrl: 'fileupload', // you must set a valid URL here else you will get an error
+//        allowedFileExtensions : ['jpg','png'],
+//        overwriteInitial: false,
+//        maxFileSize: 6000,
+//        maxFilesNum: 3,
+//        allowedFileTypes: ['image', 'video', 'flash'],
+//        showCaption:true,//：是否显示文件的标题。默认值true。
+//        showPreview:true,//：是否显示文件的预览图。默认值true。
+//        showRemove:true,//：是否显示删除/清空按钮。默认值true。
+//        showUpload:true,//：是否显示文件上传按钮。默认是submit按钮，除非指定了uploadUrl属性。默认值true。
+//        showCancel:false,//：是否显示取消文件上传按钮。只有在AJAX上传线程中该属性才可见可用。默认值true。
+//        captionClass:"",//：在标题容器上额外的class。类型string。
+//        previewClass:"",//：在预览区域容器上的额外的class。类型string。
+//        mainClass:"",//：添加在文件上传主容器。类型string。
+//        initialDelimiter:"My_file_input_pre",//：在initialPreview属性中用于上传多个文件时的分隔符。默认值：'*$$*'。
+//        initialPreview:"",//：类型string或array。显示的初始化预览内容。你
+//        slugCallback: function(filename) {
+//            return filename.replace('(', '_').replace(']', '_');
+//        }
+    });
+
+</script>
+
+</html>

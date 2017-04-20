@@ -15,6 +15,7 @@
         <module>xiaozhameng-mgmt-common</module>
         <module>xiaozhameng-mgmt-web</module>
         <module>xiaozhameng-wireless-web</module>
+        <module>xiaozhameng-core-api</module>
     </modules>
     <properties>
         <!-- profile path -->
